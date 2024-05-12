@@ -1,0 +1,8 @@
+---
+- name: Configure Router
+  hosts: R1
+  gather_facts: true
+  tasks:
+   - name: print facts
+     ansible.builtin.debug:
+       msg: "{{ ansible_facts }}"
